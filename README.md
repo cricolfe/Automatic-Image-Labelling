@@ -14,7 +14,8 @@ Results are ready to train a deep learning model using Tensorflow.
 
 ## Step 1
 Take images using cCapture.py with a webcam for example. 
-Organize all images into classses according with the different sets you want to identify (one, thwo, three, four, five in this case). Each folder has images of one class. There is also a folder with images of backgrounds to combine with images of the classes (backgrounds). If this folder is empty, original images are not combined with nothing. It is necessary also an image of the backgound without object to threshold images of the classes folders. This is called "imbk.jpg". Results will be stored in another folder called "results".  Following figure shows the set of folders to organize all images in classes and compute results.
+
+Organize all images into classses according with the different sets you want to identify. To organize images with hands folders with names "one", "two", "three", "four", "five" are created. Each folder has images of one class. There is also a folder with images of backgrounds to combine with images of the classes called "backgrounds". If this folder is empty, original images are not combined with backgrounds. It is necessary also an image of the backgound without objects to threshold pixels images and remove background. This image is called "imbk.jpg". Results will be stored in another folder called "results".  Following figure shows the set of folders to organize all images in classes and compute results.
 
 ## Documentation
 
