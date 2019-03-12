@@ -20,7 +20,7 @@ Organize all images into classses according with the different sets you want to 
 ![Folders](documentation/folders.png)
 
 ## Step 2
-Configure image labelling task with file "cFile.cfg". It is important to configure the HSV channel to threshold the image. It should be 0 for the Hue layer where colours are defined and 1 for Saturation layer. Background is removed as follow. First using the image  of backgrounds, the mean value for H or S channel is computed according with the selected channel for thresholding. This value together with the threshold value establishes a band of background pixels. This value is used to threshold incoming images. All image labelling parameters are shown in the following image.
+Configure image labelling task using file "cFile.cfg". It is important to configure the HSV channel to threshold the image. It should be 0 for the Hue layer where colours are defined and 1 for Saturation layer. Background is removed as follow. First using the image  of background "imbk.jpg", the mean value for H or S channel is computed according with the selected channel for thresholding. This value together with the threshold value establishes a band of background pixels. This value is used to threshold incoming images. All image labelling parameters are shown in the following image.
 
 ![Parameters](documentation/parameters.png)
 
