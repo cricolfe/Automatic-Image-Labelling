@@ -17,7 +17,7 @@ Take images using cCapture.py with a webcam for example.
 
 Organize all images into classses according with the different sets you want to identify. To organize images with hands folders with names "one", "two", "three", "four", "five" are created. Each folder has images of one class. There is also a folder with images of backgrounds to combine with images of the classes called "backgrounds". If this folder is empty, original images are not combined with backgrounds. It is necessary also an image of the backgound without objects to threshold pixels images and remove background. This image is called "imbk.jpg". Results will be stored in another folder called "results".  Following figure shows the set of folders to organize all images in classes and compute results.
 
-![CVAT screenshot](Automatic-Image-Labelling/documentation/folders.png)
+![Folders](documentation/folders.png)
 
 
 ## Documentation
