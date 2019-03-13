@@ -96,6 +96,7 @@ $	python cGenerate_tfrecord_masks.py --csv_input=images/results/all_labels.csv -
 
 You can follow these steps to create as many labelled image sets as you want. With *.record* files you can work with Tensorflow easily.
 
-## Referencies
+
+**Referencies**
 
 -   Ricolfe-Viala C. TOWARDS AN AUTOMATIC IMAGE OBJECT LABELLING PROCESS TO FACILITATE TRAINING STAGE OF DEEP LEARNING MODELS. Expert Systems With Applications (under revision)
