@@ -56,6 +56,7 @@ In the *images/results* folder, all combined images will appear. Also, the file 
 To generate *.record* files to work with tensorFlow, it is necessary two steps:
 
 **4.1**
+
 Information in *.xml* files is arranged in a unique *.cvs* file. Run *cXml_to_cvs.py* pointing to the folder where *.xml* files are. A *.cvs* file appears in the same folder with the name *all_labels.cvs*.
 
 ```bash
@@ -63,6 +64,19 @@ $	python cXml_to_csv.py images/results
 ```
 
 
+**4.2**
+
+*.cvs* file of step 4.1 is used to generate the *.record* file with *generate_tfrecord.py*. It is necessary to edit this code to replace the label map starting at line 31 with the label map used in the folder distribution of images defined in step 1. Each object is assigned an ID number. This number assignment will be used when configuring the labelmap.pbtxt file in next step.
+
+![Code](documentation/code.png)
+
+Generate the TFRecord files by issuing the command:
+
+```bash
+$	python generate_tfrecord.py --csv_input=images/results/all_labels.csv --image_dir=images/results --output_path=images/results/train.record
+```
+As a result, a *train.record* file appears in the output_path folder. If you want to know how a record file is generated you can see more information in [creating record file](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)
+ 
 ## Documentation
 
 -   [User's guide](cvat/apps/documentation/user_guide.md)
