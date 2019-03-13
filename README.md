@@ -25,6 +25,13 @@ Configure image labelling task using file "cFile.cfg". It is important to config
 
 ![Parameters](documentation/parameters.png)
 
+## Step 3
+Run the program cAnalisys.py with the configuration file cFile.cfg
+
+With parameter WaitTime set to 0, you can see how the algortihm is working with every image just pushing one key. With the HSV decomposition images, you can see which layer differentiate object pixels and background pixels better. In this case, H layer is the best one. With this information reconfigure the HSV channel and threshold to select pixels.
+
+![Algorithm](documentation/algorithm.png)
+
 ## Documentation
 
 -   [User's guide](cvat/apps/documentation/user_guide.md)
