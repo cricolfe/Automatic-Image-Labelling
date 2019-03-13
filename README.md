@@ -53,7 +53,7 @@ In the *images/results* folder, all combined images will appear. Also, the file 
 ![ResultsFolder](documentation/resultsFolder.png)
 
 ## Step 4. Generate files to work with Tensorflow
-To generate *.record* files to work with tensorFlow, it is necessary two steps:
+To generate a *.record* file to work with tensorFlow, it is necessary two steps:
 
 **4.1**
 
@@ -76,10 +76,26 @@ Generate the TFRecord files by issuing the command:
 $	python generate_tfrecord.py --csv_input=images/results/all_labels.csv --image_dir=images/results --output_path=images/results/train.record
 ```
 As a result, a *train.record* file appears in the output_path folder. If you want to know how a record file is generated you can see more information in [creating record file](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)
- 
-## Documentation
 
--   [User's guide](cvat/apps/documentation/user_guide.md)
--   [XML annotation format](cvat/apps/documentation/xml_format.md)
--   [AWS Deployment Guide](cvat/apps/documentation/AWS-Deployment-Guide.md)
--   [Questions](#questions)
+## Step 5. Generate files with MASKS to work with Tensorflow
+
+In step 4.2 a *.record* file was generated. This *.record* file only contains information about ROIs but not about masks. To generate a file *.record* with all the image information including ROIs and masks, launch the program *cGenerate_tfrecord_masks.py*. Inputs of the program are:
+- Path to the CSV input (csv_input) generated in step 4.1.
+- Path to the label map (label_map_path). Instead of modifiying code as in step 4.2, here a file *"label_map.pbtxt"* is used as label map
+-  Path to the images folder to be included in the *.record* file. This folder must contain images and mask as *.png* files. Images has extension *.jpg* and masks has extension *.png*. The name of the image has to be used to idetify the mask with extension *.png*. For example mask of the image with name *img_1.jpg* is *img_1.png*.
+- Mask type, numerical or png
+- Path to output TFRecord' where the file will be stored.
+
+The command is:
+
+```bash
+$	python cGenerate_tfrecord_masks.py --csv_input=images/results/all_labels.csv --label_map_path=label_map.pbtxt --image_dir=images/results --output_path=images/results/train_mask.record/train.record
+```
+
+![Masks](documentation/masks.png)
+
+You can follow these steps to create as many labelled image sets as you want. With *.record* files you can work with Tensorflow easily.
+
+## Referencies
+
+-   Ricolfe-Viala C. TOWARDS AN AUTOMATIC IMAGE OBJECT LABELLING PROCESS TO FACILITATE TRAINING STAGE OF DEEP LEARNING MODELS. Expert Systems With Applications (under revision)
