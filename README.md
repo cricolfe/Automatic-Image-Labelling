@@ -14,11 +14,11 @@ Results are ready to train a deep learning model using Tensorflow.
 - :pizza:
 
 ```bash
-pip install libconf
-pip install opencv-python
-sudo apt-get install python3-tk
-pip install pandas
-pip install matplotlib
+$ pip install libconf
+$ pip install opencv-python
+$ sudo apt-get install python3-tk
+$ pip install pandas
+$ pip install matplotlib
 ```
 
 ## Step 1
@@ -47,6 +47,8 @@ With parameter WaitTime set to 0, you can see how the algortihm is working with 
 Parameter WaitTime is waiting time between images. Set it to 10 and algorithm run with all images.
 
 ![Results](documentation/results.png)
+
+In the *~/results* folder, all combined images will appear. Also, the file with all features extracted from images *(allData.csv)* and .xml files with the same name of images with information of object ROI and the class that object belongs to. Furtherore, .png images with masks if they are necessary for mask detection. If you want to revise detected ROI you can open with any label editing program such as LabelImg for example.
 
 ## Documentation
 
