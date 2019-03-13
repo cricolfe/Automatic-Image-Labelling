@@ -1,4 +1,5 @@
-# Automatic-Image-Labelling
+![Cover](documentation/cover.png)
+
 The aim of this toolbox is to label images automatically. Images are captured under controlled background and objects are labelled easily using 2D computer vision techniques. Afterwards, detected objects are combined with images of standard backgrounds to create a rich image set to train deep models. 
 Example is done using images that contains hands with fingers. Hands (objects) are labelled under five clases (one, thwo, three, four, five)
 Results are ready to train a deep learning model using Tensorflow.
