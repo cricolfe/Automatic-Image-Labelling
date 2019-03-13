@@ -3,7 +3,7 @@ The aim of this toolbox is to label images automatically. Images are captured un
 Example is done using images that contains hands with fingers. Hands (objects) are labelled under five clases (one, thwo, three, four, five)
 Results are ready to train a deep learning model using Tensorflow.
 
-### Prerequisites:
+**Prerequisites:**
 - opencv-python
 - libconf
 - python-tk
