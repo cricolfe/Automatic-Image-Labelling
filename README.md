@@ -13,6 +13,14 @@ Results are ready to train a deep learning model using Tensorflow.
 - :coffee: 
 - :pizza:
 
+```bash
+pip install libconf
+pip install opencv-python
+sudo apt-get install python3-tk
+pip install pandas
+pip install matplotlib
+```
+
 ## Step 1
 Take images using cCapture.py with a webcam for example. It takes one image every 200 ms. Background of images have to be flat with no textures and color have to be different of objects to label. You can use a cardboard as background. A clear example is the image under the title.
 
@@ -28,9 +36,17 @@ Configure image labelling task using file "cFile.cfg". It is important to config
 ## Step 3
 Run the program cAnalisys.py with the configuration file cFile.cfg
 
+```bash
+$ python cAnalysis.py cFile.cfg
+```
+
 With parameter WaitTime set to 0, you can see how the algortihm is working with every image just pushing one key. With the HSV decomposition images, you can see which layer differentiate object pixels and background pixels better. In this case, H layer is the best one. With this information reconfigure the HSV channel and threshold to select pixels.
 
 ![Algorithm](documentation/algorithm.png)
+
+Parameter WaitTime is waiting time between images. Set it to 10 and algorithm run with all images.
+
+![Results](documentation/results.png)
 
 ## Documentation
 
