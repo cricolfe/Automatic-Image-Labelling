@@ -89,7 +89,7 @@ In step 4.2 a *.record* file was generated. This *.record* file only contains in
 The command is:
 
 ```bash
-$	python cGenerate_tfrecord_masks.py --csv_input=images/results/all_labels.csv --label_map_path=label_map.pbtxt --image_dir=images/results --output_path=images/results/train_mask.record/train.record
+$	python cGenerate_tfrecord_masks.py --csv_input=images/results/all_labels.csv --label_map_path=label_map.pbtxt --image_dir=images/results --output_path=images/results/train_mask.record
 ```
 
 ![Masks](documentation/masks.png)
