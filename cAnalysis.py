@@ -98,7 +98,7 @@ for i in range(len(config.IDs)):
         if nBackFiles > 0:
             imgBkFileName = join(backgroundFolder, backgroundFiles[random.randint(0, nBackFiles - 1)])
             imgBakground = cv2.imread(imgBkFileName, 1)
-             imgComb = fn.combineImages(img, imgBakground, object)
+            imgComb = fn.combineImages(img, imgBakground, object)
         else:
             imgComb = img
 
