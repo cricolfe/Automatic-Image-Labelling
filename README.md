@@ -99,4 +99,4 @@ You can follow these steps to create as many labelled image sets as you want. Wi
 
 **Referencies**
 
--   Ricolfe-Viala C. TOWARDS AN AUTOMATIC IMAGE OBJECT LABELLING PROCESS TO FACILITATE TRAINING STAGE OF DEEP LEARNING MODELS. Expert Systems With Applications (under revision)
+-   Ricolfe-Viala C. TOWARDS AN AUTOMATIC IMAGE OBJECT LABELLING PROCESS TO FACILITATE TRAINING STAGE OF DEEP LEARNING MODELS. (under revision)
