@@ -1,4 +1,4 @@
-![Cover](documentation/cover.png)
+![Cover](documentation/cover.PNG)
 
 Manual image objects labelling is a very tedious and time consuming task. The aim of this toolbox is to facilitate the initial step of creating a set of labelled objects in images to train deep models. Here, images are captured under controlled background and objects are labelled easily using 2D computer vision techniques. Afterwards, detected objects are combined with images of standard backgrounds to create a rich image set to train deep models. 
 Example is done using images that contains hands with fingers. Hands (objects) are labelled under five clases (one, thwo, three, four, five)
