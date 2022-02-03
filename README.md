@@ -99,4 +99,4 @@ You can follow these steps to create as many labelled image sets as you want. Wi
 
 **Referencies**
 
--   Ricolfe-Viala C. Fast labelling of image objects to simplify the training process of deep learning-based classifiers. (under revision)
+-   Ricolfe-Viala, C.; Blanes, C. Improving Robot Perception Skills Using a Fast Image-Labelling Method with Minimal Human Intervention. Appl. Sci. 2022, 12, 1557. https://doi.org/10.3390/app12031557
